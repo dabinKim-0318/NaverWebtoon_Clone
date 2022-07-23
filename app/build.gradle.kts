@@ -57,6 +57,8 @@ android {
 
 
 dependencies {
+    implementation(project(":get_cookie"))
+    implementation (project(":buy_cookie"))
 
     implementation(Dep.Coroutine.core)
     implementation(Dep.Coroutine.android)
@@ -98,7 +100,7 @@ dependencies {
     implementation(Dep.glide)
     kapt(Dep.glide_compiler)
 
-    implementation(Dep.stickyScrollView)
+    //implementation(Dep.stickyScrollView)
     implementation(Dep.circleimageview)
 
     testImplementation(Dep.Test.junit)
