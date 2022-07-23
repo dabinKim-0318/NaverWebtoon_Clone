@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "TonTonHae"
-include ':app'
+include (":app")
+include(":get_cookie")
+include(":buy_cookie")
