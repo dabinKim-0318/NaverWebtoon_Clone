@@ -51,7 +51,6 @@ android {
 
     buildFeatures {
         dataBinding = true
-        viewBinding = true
     }
 }
 
@@ -60,55 +59,58 @@ dependencies {
     implementation(project(":get_cookie"))
     implementation (project(":buy_cookie"))
 
+    // Android Core
     implementation(Dep.Coroutine.core)
     implementation(Dep.Coroutine.android)
     testImplementation(Dep.Coroutine.test)
-
     implementation(Dep.Android.core)
     implementation(Dep.Android.appcompat)
+
+    // Material Design
     implementation(Dep.Android.material)
-    implementation(Dep.Android.constraintLayout)
+
+    // Jetpack Fragment
     implementation(Dep.Android.fragment)
-    implementation(Dep.Android.flexbox)
-    implementation(Dep.Android.splashscreen)
-    implementation(Dep.Android.webkit)
 
-    implementation(Dep.Navigation.fragmentKtx)
-    implementation(Dep.Navigation.uiKtx)
-
-    implementation(Dep.CustomLibrary.keyboardListener)
-    implementation(Dep.CustomLibrary.lottie)
-
+    // Jetpack Lifecycle
     implementation(Dep.Lifecycle.viewModel)
     implementation(Dep.Lifecycle.runtime)
     implementation(Dep.Lifecycle.savedState)
     implementation(Dep.Lifecycle.livedata)
 
+    // Jetpack Security
+    implementation(Dep.Security.core)
+
+    // Dagger-Hilt
     implementation(Dep.Dagger.hiltAndroid)
     kapt(Dep.Dagger.hiltCompiler)
 
+    // Http Client Library
     implementation(Dep.OkHttp.core)
     implementation(Dep.OkHttp.loggingInterceptor)
     implementation(Dep.OkHttp.mockWebServer)
     implementation(Dep.Retrofit.core)
+
+    //JsonConverterLibrary
     implementation(Dep.Retrofit.converterMoshi)
     implementation(Dep.Moshi.core)
     implementation(Dep.Moshi.kotlin)
 
-
+    // Logger - Timber
     implementation(Dep.timber)
+
+    // ImageLoading Library
     implementation(Dep.glide)
     kapt(Dep.glide_compiler)
 
-    //implementation(Dep.stickyScrollView)
+    implementation(Dep.Android.flexbox)
+    implementation(Dep.Android.splashscreen)
+    implementation(Dep.Android.webkit)
+    implementation(Dep.Android.constraintLayout)
+
     implementation(Dep.circleimageview)
-
-    testImplementation(Dep.Test.junit)
-    androidTestImplementation(Dep.AndroidTest.core)
-    androidTestImplementation(Dep.AndroidTest.rules)
-    androidTestImplementation(Dep.AndroidTest.runner)
-    androidTestImplementation(Dep.AndroidTest.junitExt)
-
+    implementation(Dep.CustomLibrary.keyboardListener)
+    implementation(Dep.CustomLibrary.lottie)
 
     implementation(Dep.XmlParser.tickaroo)
     implementation(Dep.XmlParser.tickaroo_core)
@@ -119,12 +121,4 @@ dependencies {
     implementation(Dep.rxjava.rxjava2_android)
     implementation(Dep.rxjava.rxjava2_adpater)
     implementation(Dep.Retrofit.converterGson)
-
-    implementation(Dep.Security.core)
-
-    testImplementation(Dep.Kotest.junitRunner)
-    testImplementation(Dep.Kotest.assertionsCore)
-    testImplementation(Dep.Kotest.property)
-
-    testImplementation(Dep.CashApp.turbine)
 }
