@@ -58,6 +58,7 @@ android {
 dependencies {
     implementation(project(":get_cookie"))
     implementation (project(":buy_cookie"))
+    implementation (project(":tds"))
 
     // Android Core
     implementation(Dep.Coroutine.core)

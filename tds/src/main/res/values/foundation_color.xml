@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="turquoise90">#6289ED</color>
+    <color name="turquoise80">#8DA6E8</color>
+    <color name="turquoise70">#9EB4EE</color>
+
+    <color name="green90">#61B9A4</color>
+    <color name="green80">#65CCB3</color>
+    <color name="green70">#96DECD</color>
+
+    <color name="gy90">#25272B</color>
+    <color name="gy80">#44474B</color>
+    <color name="gy70">#656A71</color>
+    <color name="gy60">#9FA4AB</color>
+    <color name="gy50">#CFD1D5</color>
+    <color name="gy40">#E7E8EA</color>
+    <color name="gy30">#F4F4F5</color>
+
+    <color name="bk100">#000000</color>
+    <color name="wh100">#ffffff</color>
+
+    <color name="like">#FB515C</color>
+    <color name="dim">#99000000</color>
+
+    <color name="bg">#F7F7F7</color>
+
+    <color name="error">#E7272D</color>
+    <color name="success">#249F42</color>
+    <color name="information">#1D98F9</color>
+</resources>
